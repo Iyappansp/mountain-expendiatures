@@ -1,0 +1,106 @@
+/* RTL (Right-to-Left) Support */
+
+  direction: rtl;
+  text-align: right;
+}
+
+/* Ensure icons in buttons/links have correct margin in RTL */
+[dir="rtl"] .dashboard-nav a svg,
+[dir="rtl"] .dashboard-nav a i,
+[dir="rtl"] .dashboard-nav a .icon {
+  margin-left: 1rem;
+  margin-right: 0;
+}
+
+[dir="rtl"] .navbar .container {
+  flex-direction: row; /* Force logo left even in RTL as per request */
+}
+
+[dir="rtl"] .navbar-brand {
+  margin-right: auto;
+  margin-left: 0;
+}
+
+[dir="rtl"] .navbar-menu {
+  margin: 0 auto;
+  flex-direction: row;
+}
+
+[dir="rtl"] .hero-content {
+  text-align: right;
+}
+
+[dir="rtl"] .section-header {
+  text-align: right;
+}
+
+[dir="rtl"] .footer-grid {
+  direction: rtl;
+}
+
+[dir="rtl"] .card-title,
+[dir="rtl"] .card-text {
+  text-align: right;
+}
+
+[dir="rtl"] .expedition-meta {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .form-label {
+  text-align: right;
+}
+
+[dir="rtl"] .btn {
+  direction: rtl;
+}
+
+/* Specific flex alignment for RTL instead of broad row-reverse */
+[dir="rtl"] .navbar .nav-toggles {
+  margin-right: 1.5rem;
+  margin-left: 0;
+}
+
+[dir="rtl"] .footer-links {
+  text-align: right;
+}
+
+[dir="rtl"] .text-left {
+  text-align: right;
+}
+
+[dir="rtl"] .text-right {
+  text-align: left;
+}
+
+/* Dashboard RTL */
+[dir="rtl"] .dashboard-sidebar {
+  right: 0;
+  left: auto;
+  border-right: none;
+  border-left: 1px solid var(--border-color);
+}
+
+[dir="rtl"] .dashboard-main {
+  margin-right: 250px !important;
+  margin-left: 0 !important;
+  text-align: right;
+}
+
+[dir="rtl"] .dashboard-nav {
+  text-align: right;
+}
+
+[dir="rtl"] table {
+  direction: rtl;
+  text-align: right;
+}
+
+[dir="rtl"] th, [dir="rtl"] td {
+  text-align: right;
+}
+
+[dir="rtl"] .dashboard-nav a {
+  flex-direction: row-reverse; /* Icon on right, text on left */
+  justify-content: flex-start;
+}

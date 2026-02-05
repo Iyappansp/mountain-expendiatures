@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trip Dossier - Mountain Expedition</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/dark-mode.css">
+  <link rel="stylesheet" href="../assets/css/rtl.css">
+  <style>
+    .dashboard-container{display:flex;min-height:100vh}.dashboard-sidebar{width:250px;background-color:var(--bg-tertiary);border-right:1px solid var(--border-color);padding:2rem 0;position:fixed;height:100vh;overflow-y:auto}.dashboard-main{flex:1;margin-left:250px;padding:2rem}.dashboard-nav{list-style:none;padding:0}.dashboard-nav li{margin-bottom:.5rem}.dashboard-nav a{display:flex;align-items:center;gap:1rem;padding:.75rem 1.5rem;color:var(--text-secondary);text-decoration:none;transition:var(--transition)}.dashboard-nav a:hover,.dashboard-nav a.active{background-color:var(--primary);color:white}@media (max-width:768px){.dashboard-sidebar{width:100%;position:relative;height:auto}.dashboard-main{margin-left:0}}
+  </style>
+</head>
+<body>
+  <div class="dashboard-container">
+    <!-- Sidebar -->
+    <aside class="dashboard-sidebar">
+      <div style="text-align: center; margin-bottom: 2rem; padding: 0 1.5rem;">
+        <img src="../assets/images/logo.svg" alt="Logo" class="sidebar-logo">
+        <h3 style="color: var(--primary); font-size: 1.2rem;">Client Portal</h3>
+        <p style="color: var(--text-light); font-size: 0.8rem;">Welcome, John Doe</p>
+      </div>
+      
+      <ul class="dashboard-nav">
+        <li><a href="index.html" data-testid="nav-overview">📊 Overview</a></li>
+        <li><a href="bookings.html" data-testid="nav-bookings">📅 My Bookings</a></li>
+        <li><a href="trips.html" class="active" data-testid="nav-trips">🗺️ Trip Dossier</a></li>
+        <li><a href="gear.html" data-testid="nav-gear">🎒 Gear Checklist</a></li>
+        <li><a href="profile.html" data-testid="nav-profile">👤 Profile</a></li>
+        <li><a href="settings.html" data-testid="nav-settings">⚙️ Settings</a></li>
+        <li><a href="#" id="logoutBtn" style="margin-top: 2rem; border-top: 1px solid var(--border-color); padding-top: 1rem;">🚪 Log Out</a></li>
+      </ul>
+      
+      <div style="padding: 0 1.5rem; margin-top: 2rem; display: flex; gap: 0.5rem;">
+        <button class="rtl-toggle" id="rtlToggle" style="flex: 1; padding: 0.5rem;">RTL</button>
+        <button class="dark-mode-toggle" style="flex: 1; padding: 0.5rem;">Theme</button>
+      </div>
+    </aside>
+
+    <main class="dashboard-main">
+      <div style="margin-bottom:2rem"><h1>Trip Dossier</h1><p style="color:var(--text-secondary)">Detailed itinerary and information for your expedition</p></div>
+
+      <div class="card" style="margin-bottom:2rem;background:linear-gradient(135deg,var(--primary-dark),var(--accent));color:white" data-testid="trip-header">
+        <h2 style="color:white">Everest Base Camp Trek</h2>
+        <p style="font-size:1.125rem;color:rgba(255,255,255,.95)">May 15 - May 28, 2025 • 14 Days</p>
+        <div style="display:flex;gap:1rem;margin-top:1rem;flex-wrap:wrap">
+          <span class="badge" style="background-color:rgba(255,255,255,.2);color:white;padding:.5rem 1rem">Moderate Difficulty</span>
+          <span class="badge" style="background-color:rgba(255,255,255,.2);color:white;padding:.5rem 1rem">Max Altitude: 5,364m</span>
+          <span class="badge" style="background-color:rgba(255,255,255,.2);color:white;padding:.5rem 1rem">Group Size: 8-12</span>
+        </div>
+      </div>
+
+      <div class="grid grid-2" style="margin-bottom:2rem">
+        <div class="card">
+          <h3>Trip Highlights</h3>
+          <ul style="list-style:none;padding:0">
+            <li style="padding:.75rem 0;border-bottom:1px solid var(--border-color)">✓ Reach Everest Base Camp at 5,364m</li>
+            <li style="padding:.75rem 0;border-bottom:1px solid var(--border-color)">✓ Visit Kala Patthar viewpoint (5,545m)</li>
+            <li style="padding:.75rem 0;border-bottom:1px solid var(--border-color)">✓ Experience Sherpa culture in Namche Bazaar</li>
+            <li style="padding:.75rem 0;border-bottom:1px solid var(--border-color)">✓ Explore Tengboche Monastery</li>
+            <li style="padding:.75rem 0">✓ Stunning Himalayan mountain views</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>What's Included</h3>
+          <ul style="list-style:none;padding:0">
+            <li style="padding:.75rem 0;border-bottom:1px solid var(--border-color)">✓ Experienced guide & porters</li>
+            <li style="padding:.75rem 0;border-bottom:1px solid var(--border-color)">✓ All meals during trek</li>
+            <li style="padding:.75rem 0;border-bottom:1px solid var(--border-color)">✓ Teahouse accommodations</li>
+            <li style="padding:.75rem 0;border-bottom:1px solid var(--border-color)">✓ Permits & national park fees</li>
+            <li style="padding:.75rem 0">✓ Emergency evacuation insurance</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card" style="margin-bottom:2rem">
+        <h3 style="margin-bottom:1.5rem">Day-by-Day Itinerary</h3>
+        <div data-testid="itinerary">
+          <div style="padding:1rem;border-left:3px solid var(--primary);margin-bottom:1rem;background:var(--bg-secondary)">
+            <h5>Day 1: Arrival in Kathmandu</h5>
+            <p>Transfer to hotel. Welcome dinner and expedition briefing with your guide team.</p>
+          </div>
+          <div style="padding:1rem;border-left:3px solid var(--primary);margin-bottom:1rem;background:var(--bg-secondary)">
+            <h5>Day 2: Fly to Lukla, Trek to Phakding (2,610m)</h5>
+            <p>Scenic flight to Lukla. Begin trek through pine forests to Phakding. 3-4 hours hiking.</p>
+          </div>
+          <div style="padding:1rem;border-left:3px solid var(--primary);margin-bottom:1rem;background:var(--bg-secondary)">
+            <h5>Day 3-4: Trek to Namche Bazaar (3,440m)</h5>
+            <p>Climb to the Sherpa capital. Acclimatization day with optional hikes to Everest View Hotel.</p>
+          </div>
+          <div style="padding:1rem;border-left:3px solid var(--primary);margin-bottom:1rem;background:var(--bg-secondary)">
+            <h5>Day 5-7: Trek to Dingboche via Tengboche</h5>
+            <p>Visit famous monastery. Continue through rhododendron forests to Dingboche for acclimatization.</p>
+          </div>
+          <div style="padding:1rem;border-left:3px solid var(--primary);margin-bottom:1rem;background:var(--bg-secondary)">
+            <h5>Day 8-9: Trek to Everest Base Camp (5,364m)</h5>
+            <p>Reach Gorak Shep, then continue to Base Camp. Return to Gorak Shep for overnight.</p>
+          </div>
+          <div style="padding:1rem;border-left:3px solid var(--primary);margin-bottom:1rem;background:var(--bg-secondary)">
+            <h5>Day 10: Climb Kala Patthar, Descend</h5>
+            <p>Early morning climb for sunrise views of Everest. Begin descent to Pheriche.</p>
+          </div>
+          <div style="padding:1rem;border-left:3px solid var(--primary);margin-bottom:1rem;background:var(--bg-secondary)">
+            <h5>Day 11-13: Return Trek to Lukla</h5>
+            <p>Descend through familiar villages. Celebrate completion in Lukla.</p>
+          </div>
+          <div style="padding:1rem;border-left:3px solid var(--primary);background:var(--bg-secondary)">
+            <h5>Day 14: Fly to Kathmandu, Departure</h5>
+            <p>Morning flight to Kathmandu. Transfer to airport for international departure.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Important Notes</h3>
+        <div class="grid grid-2">
+          <div>
+            <h5>Physical Fitness</h5>
+            <p>Good cardiovascular fitness required. Able to walk 5-6 hours per day with a daypack.</p>
+          </div>
+          <div>
+            <h5>Altitude</h5>
+            <p>Proper acclimatization is built into itinerary. Follow guide instructions carefully.</p>
+          </div>
+          <div>
+            <h5>Weather</h5>
+            <p>Spring (Mar-May) and autumn (Sep-Nov) are best seasons. Prepare for cold temperatures.</p>
+          </div>
+          <div>
+            <h5>Communication</h5>
+            <p>WiFi available at most teahouses. Satellite phone for emergencies.</p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/dashboard.js"></script>
+  <script src="../assets/js/logout.js"></script>
+</body>
+</html>

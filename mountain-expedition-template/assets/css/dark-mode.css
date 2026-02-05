@@ -1,0 +1,148 @@
+/* Dark Mode Specific Styles */
+
+body.dark-mode {
+  --bg-primary: #0f172a;
+  --bg-secondary: #1e293b;
+  --bg-tertiary: #334155;
+  --text-primary: #f1f5f9;
+  --text-secondary: #cbd5e1;
+  --text-light: #94a3b8;
+  --border-color: #334155;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+body.dark-mode .navbar {
+  background-color: var(--bg-secondary);
+  border-bottom-color: var(--border-color);
+}
+
+body.dark-mode .navbar-brand {
+  color: var(--primary-light);
+}
+
+body.dark-mode .navbar-menu a {
+  color: var(--text-secondary);
+}
+
+body.dark-mode .navbar-menu a:hover,
+body.dark-mode .navbar-menu a.active {
+  color: var(--primary-light);
+  background-color: var(--bg-tertiary);
+}
+
+body.dark-mode .card,
+body.dark-mode .expedition-card,
+body.dark-mode .stat-card {
+  background-color: var(--bg-secondary);
+  border-color: var(--border-color);
+}
+
+body.dark-mode .card-text,
+body.dark-mode .card p,
+body.dark-mode .card li,
+body.dark-mode .card span {
+  color: var(--text-secondary);
+}
+
+body.dark-mode .card-title,
+body.dark-mode .card h3,
+body.dark-mode .card h4 {
+  color: var(--text-primary);
+}
+
+body.dark-mode .form-control {
+  background-color: #1e293b;
+  border-color: #334155;
+  color: #f1f5f9;
+}
+
+body.dark-mode .footer {
+  background-color: #1e293b;
+  border-top-color: #334155;
+}
+
+body.dark-mode .hero {
+  background: linear-gradient(135deg, #1e293b 0%, #0ea5e9 100%);
+}
+
+/* Dark Mode Badge Colors */
+body.dark-mode .badge-difficulty {
+  background-color: #78350f;
+  color: #fef3c7;
+}
+
+body.dark-mode .badge-duration {
+  background-color: #1e3a8a;
+  color: #dbeafe;
+}
+
+body.dark-mode .badge-price {
+  background-color: #064e3b;
+  color: #d1fae5;
+}
+
+/* Dark Mode Links */
+body.dark-mode a {
+  color: #60a5fa;
+}
+
+body.dark-mode a:hover {
+  color: #38bdf8;
+}
+
+/* Dark Mode Buttons */
+body.dark-mode .btn-outline {
+  color: #60a5fa;
+  border-color: #60a5fa;
+}
+
+body.dark-mode .btn-outline:hover {
+  background-color: #60a5fa;
+  color: #0f172a;
+}
+
+body.dark-mode .btn,
+body.dark-mode .btn-primary,
+body.dark-mode .btn-secondary {
+  color: #ffffff; /* Explicitly white text in dark mode */
+}
+
+/* Dark Mode Table (for dashboard) */
+body.dark-mode table {
+  color: #f1f5f9;
+}
+
+body.dark-mode th {
+  background-color: #1e293b;
+  border-color: #334155;
+}
+
+body.dark-mode td {
+  border-color: #334155;
+}
+
+body.dark-mode tr:hover {
+  background-color: #334155;
+}
+
+/* Gear Checklist Dark Mode */
+body.dark-mode .gear-item {
+  border-bottom-color: var(--border-color);
+}
+body.dark-mode .gear-item label {
+  color: var(--text-primary);
+}
+
+/* Form Styles Dark Mode */
+body.dark-mode .form-check-label {
+  color: var(--text-primary);
+}
+body.dark-mode ::placeholder {
+  color: var(--text-secondary);
+  opacity: 0.7;
+}
+body.dark-mode .form-control::placeholder {
+  color: var(--text-secondary);
+  opacity: 0.7;
+}

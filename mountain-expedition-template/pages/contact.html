@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Mountain Expedition for booking inquiries and expedition information.">
+  <title>Contact Us - Mountain Expedition</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/dark-mode.css">
+  <link rel="stylesheet" href="../assets/css/rtl.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">
+        <img src="../assets/images/logo.svg" alt="Mountain Expedition" class="navbar-logo">
+      </a>
+      <button class="navbar-toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+      <ul class="navbar-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="home-2.html">Home 2</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="expeditions.html">Expeditions</a></li>
+        <li><a href="gear-list.html">Gear</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="../dashboard/index.html" class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Dashboard</a></li>
+        <li class="nav-toggles">
+          <button class="rtl-toggle" id="rtlToggle" aria-label="Toggle RTL">RTL</button>
+          <button class="dark-mode-toggle" aria-label="Toggle dark mode">🌙</button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="hero" style="height: 400px;">
+    <div class="hero-content">
+      <h1>Get in Touch</h1>
+      <p>Let's plan your next mountain adventure</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="grid grid-2" style="gap: 4rem;">
+        <div>
+          <h2>Contact Information</h2>
+          <p>Have questions about our expeditions? Ready to book your adventure? Get in touch with our team.</p>
+          
+          <div style="margin-top: 1.5rem;">
+            <div style="display: flex; gap: 1rem; margin-bottom: 1rem; align-items: flex-start;">
+              <div style="font-size: 1.5rem;">📧</div>
+              <div>
+                <h5 class="mb-0">Email</h5>
+                <p style="color: var(--text-secondary); margin-bottom: 0;">info@mountainexpedition.com</p>
+              </div>
+            </div>
+            
+            <div style="display: flex; gap: 1rem; margin-bottom: 1rem; align-items: flex-start;">
+              <div style="font-size: 1.5rem;">📞</div>
+              <div>
+                <h5 class="mb-0">Phone</h5>
+                <p style="color: var(--text-secondary); margin-bottom: 0;">+1 (555) 123-4567 | Mon-Fri: 9am-6pm MST</p>
+              </div>
+            </div>
+            
+            <div style="display: flex; gap: 1rem; margin-bottom: 1rem; align-items: flex-start;">
+              <div style="font-size: 1.5rem;">📍</div>
+              <div>
+                <h5 class="mb-0">Office</h5>
+                <p style="color: var(--text-secondary); margin-bottom: 0;">123 Summit Drive, Boulder, CO 80302, USA</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mt-3 h-auto">
+            <h4 class="mb-3">Office Hours</h4>
+            <div class="d-flex justify-content-between mb-2">
+              <span><strong>Monday:</strong></span>
+              <span>9:00 AM - 6:00 PM MST</span>
+            </div>
+            <br>
+            <div class="d-flex justify-content-between mb-2">
+              <span><strong>Tuesday:</strong></span>
+              <span>9:00 AM - 6:00 PM MST</span>
+            </div>
+            <br>
+            <div class="d-flex justify-content-between mb-2">
+              <span><strong>Wednesday:</strong></span>
+              <span>9:00 AM - 6:00 PM MST</span>
+            </div>
+            <br>
+            <div class="d-flex justify-content-between mb-2">
+              <span><strong>Thursday:</strong></span>
+              <span>9:00 AM - 6:00 PM MST</span>
+            </div>
+            <br>
+            <div class="d-flex justify-content-between mb-2">
+              <span><strong>Friday:</strong></span>
+              <span>9:00 AM - 6:00 PM MST</span>
+            </div>
+            <br>
+            <div class="d-flex justify-content-between mb-2">
+              <span><strong>Saturday:</strong></span>
+              <span>10:00 AM - 4:00 PM MST</span>
+            </div>
+            <br>
+            <div class="d-flex justify-content-between">
+              <span><strong>Sunday:</strong></span>
+              <span>Closed</span>
+            </div>
+                  <br>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2>Send Us a Message</h2>
+          <form data-validate data-testid="contact-form">
+            <div class="form-group">
+              <label for="name" class="form-label">Full Name *</label>
+              <input type="text" id="name" name="name" class="form-control" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email" class="form-label">Email Address *</label>
+              <input type="email" id="email" name="email" class="form-control" required>
+            </div>
+
+            <div class="form-group">
+              <label for="phone" class="form-label">Phone Number</label>
+              <input type="tel" id="phone" name="phone" class="form-control">
+            </div>
+
+            <div class="form-group">
+              <label for="expedition" class="form-label">Expedition Interest</label>
+              <select id="expedition" name="expedition" class="form-control">
+                <option value="">Select an expedition...</option>
+                <option value="everest">Everest Base Camp</option>
+                <option value="k2">K2 Advanced Climbing</option>
+                <option value="annapurna">Annapurna Circuit</option>
+                <option value="matterhorn">Matterhorn Summit</option>
+                <option value="mont-blanc">Mont Blanc</option>
+                <option value="custom">Custom Expedition</option>
+                <option value="training">Training Program</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message" class="form-label">Message *</label>
+              <textarea id="message" name="message" class="form-control" rows="5" required minlength="10"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" data-testid="submit-button">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background-color: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+      </div>
+      <div class="grid grid-2">
+        <div class="card">
+          <h4>What experience do I need?</h4>
+          <p>Experience requirements vary by expedition. We offer trips for all levels, from beginner treks to expert technical climbs.</p>
+        </div>
+        <div class="card">
+          <h4>What's included in the price?</h4>
+          <p>Prices include guide services, group equipment, permits, base camp meals, and in-country transport. Flights and personal gear are separate.</p>
+        </div>
+        <div class="card">
+          <h4>How do I prepare physically?</h4>
+          <p>We provide detailed training plans 3-6 months before your expedition. Focus on cardio, strength, and acclimatization hikes.</p>
+        </div>
+        <div class="card">
+          <h4>What about insurance?</h4>
+          <p>We require comprehensive travel and evacuation insurance. We can recommend providers and verify coverage before departure.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-section">
+          <h4>Mountain Expedition</h4>
+          <p>Professional mountain guiding and expedition services for adventurers of all levels.</p>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="expeditions.html">Expeditions</a></li>
+            <li><a href="gear-list.html">Gear List</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Resources</h4>
+          <ul class="footer-links">
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="../dashboard/index.html">Client Dashboard</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Contact</h4>
+          <ul class="footer-links">
+            <li>📧 info@mountainexpedition.com</li>
+            <li>📞 +1 (555) 123-4567</li>
+            <li>📍 Boulder, Colorado, USA</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Mountain Expedition. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

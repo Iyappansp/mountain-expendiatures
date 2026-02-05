@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mountain expedition stories, climbing tips, and adventure updates from our guides.">
+  <title>Blog - Mountain Expedition</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/dark-mode.css">
+  <link rel="stylesheet" href="../assets/css/rtl.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">
+        <img src="../assets/images/logo.svg" alt="Mountain Expedition" class="navbar-logo">
+      </a>
+      <button class="navbar-toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+      <ul class="navbar-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="home-2.html">Home 2</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="expeditions.html">Expeditions</a></li>
+        <li><a href="gear-list.html">Gear</a></li>
+        <li><a href="blog.html" class="active">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="../dashboard/index.html" class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Dashboard</a></li>
+        <li class="nav-toggles">
+          <button class="rtl-toggle" id="rtlToggle" aria-label="Toggle RTL">RTL</button>
+          <button class="dark-mode-toggle" aria-label="Toggle dark mode">🌙</button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="hero" style="height: 400px;">
+    <div class="hero-content">
+      <h1>Mountain Stories & Tips</h1>
+      <p>Adventures, guides, and insights from the peaks</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="grid grid-3">
+        <article class="card" data-testid="blog-post-1">
+          <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800" alt="Everest summit" class="card-img">
+          <span class="badge" style="background-color: var(--accent); color: white; margin-bottom: 1rem;">Featured</span>
+          <h3 class="card-title">Summit Success: Everest 2024</h3>
+          <p style="color: var(--text-light); font-size: 0.9rem; margin-bottom: 1rem;">December 15, 2024 • By John Anderson</p>
+          <p class="card-text">Our team successfully summited Everest with all members reaching the top. Read about the challenges and triumphs...</p>
+          <a href="#" class="btn btn-outline">Read More</a>
+        </article>
+
+        <article class="card" data-testid="blog-post-2">
+          <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?w=800" alt="Ice climbing" class="card-img">
+          <h3 class="card-title">Essential Ice Climbing Techniques</h3>
+          <p style="color: var(--text-light); font-size: 0.9rem; margin-bottom: 1rem;">December 10, 2024 • By Sarah Chen</p>
+          <p class="card-text">Master the fundamentals of ice climbing with our comprehensive guide to techniques and safety...</p>
+          <a href="#" class="btn btn-outline">Read More</a>
+        </article>
+
+        <article class="card" data-testid="blog-post-3">
+          <img src="https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?w=800" alt="Alpine training" class="card-img">
+          <h3 class="card-title">Preparing for High Altitude</h3>
+          <p style="color: var(--text-light); font-size: 0.9rem; margin-bottom: 1rem;">December 5, 2024 • By Michael Torres</p>
+          <p class="card-text">Learn how to properly acclimatize and prepare your body for high-altitude mountaineering...</p>
+          <a href="#" class="btn btn-outline">Read More</a>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1522163182402-834f871fd851?w=800" alt="Mountain safety" class="card-img">
+          <h3 class="card-title">Avalanche Safety 101</h3>
+          <p style="color: var(--text-light); font-size: 0.9rem; margin-bottom: 1rem;">November 28, 2024 • By Guide Team</p>
+          <p class="card-text">Understanding avalanche risks and how to stay safe in backcountry terrain...</p>
+          <a href="#" class="btn btn-outline">Read More</a>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800" alt="Gear review" class="card-img">
+          <h3 class="card-title">2025 Gear Review</h3>
+          <p style="color: var(--text-light); font-size: 0.9rem; margin-bottom: 1rem;">November 20, 2024 • By Equipment Team</p>
+          <p class="card-text">Our comprehensive review of the latest mountaineering equipment and innovations...</p>
+          <a href="#" class="btn btn-outline">Read More</a>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1519904981063-b0cf448d479e?w=800" alt="Training tips" class="card-img">
+          <h3 class="card-title">Training for Your First 6000m Peak</h3>
+          <p style="color: var(--text-light); font-size: 0.9rem; margin-bottom: 1rem;">November 15, 2024 • By Sarah Chen</p>
+          <p class="card-text">A complete training guide to prepare for your first high-altitude expedition...</p>
+          <a href="#" class="btn btn-outline">Read More</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-section">
+          <h4>Mountain Expedition</h4>
+          <p>Professional mountain guiding and expedition services for adventurers of all levels.</p>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="expeditions.html">Expeditions</a></li>
+            <li><a href="gear-list.html">Gear List</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Resources</h4>
+          <ul class="footer-links">
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="../dashboard/index.html">Client Dashboard</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Contact</h4>
+          <ul class="footer-links">
+            <li>📧 info@mountainexpedition.com</li>
+            <li>📞 +1 (555) 123-4567</li>
+            <li>📍 Boulder, Colorado, USA</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Mountain Expedition. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

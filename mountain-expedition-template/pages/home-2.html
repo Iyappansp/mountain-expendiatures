@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mountain Expedition - Experience the thrill of high altitude adventures.">
+  <title>Mountain Expedition - Home 2</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/dark-mode.css">
+  <link rel="stylesheet" href="../assets/css/rtl.css">
+
+  <style>
+    /* Home 2 specific overrides */
+    .hero-variant {
+      background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+      height: 700px;
+    }
+    .hero-variant::before {
+      opacity: 0.5;
+      background-image: url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1600');
+    }
+  </style>
+</head>
+<body class="d-flex flex-column min-vh-100">
+  
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">
+        <img src="../assets/images/logo.svg" alt="Mountain Expedition" class="navbar-logo">
+      </a>
+      
+      <button class="navbar-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <ul class="navbar-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="home-2.html" class="active">Home 2</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="expeditions.html">Expeditions</a></li>
+        <li><a href="gear-list.html">Gear</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="../dashboard/index.html" class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Dashboard</a></li>
+        <li class="nav-toggles">
+          <button class="rtl-toggle" id="rtlToggle" aria-label="Toggle RTL">RTL</button>
+          <button class="dark-mode-toggle" aria-label="Toggle dark mode">🌙</button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero hero-variant">
+    <div class="hero-content">
+      <h1>Reach New Heights</h1>
+      <p>Embark on the journey of a lifetime with our expert guides.</p>
+      <div class="d-flex gap-3 justify-content-center">
+        <a href="expeditions.html" class="btn btn-primary">Start Adventure</a>
+        <a href="about.html" class="btn btn-secondary">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Section -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Popular Expeditions</h2>
+        <p class="section-subtitle">Choose from our most sought-after climbing destinations around the globe.</p>
+      </div>
+      
+      <div class="grid grid-3">
+        <div class="expedition-card">
+          <img src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=800" alt="Everest" class="expedition-img">
+          <div class="expedition-body">
+            <div class="expedition-meta">
+              <span class="badge badge-difficulty">Extreme</span>
+              <span class="badge badge-duration">60 Days</span>
+            </div>
+            <h3>Mt. Everest South Col</h3>
+            <p>The ultimate mountaineering challenge. Stand on top of the world.</p>
+            <a href="expeditions.html" class="btn btn-outline w-100">View Details</a>
+          </div>
+        </div>
+        
+        <div class="expedition-card">
+          <img src="../assets/images/spur.png" alt="K2" class="expedition-img">
+          <div class="expedition-body">
+            <div class="expedition-meta">
+              <span class="badge badge-difficulty">Extreme+</span>
+              <span class="badge badge-duration">45 Days</span>
+            </div>
+            <h3>K2 Abruzzi Spur</h3>
+            <p>The savage mountain. A technical masterpiece for expert climbers.</p>
+            <a href="expeditions.html" class="btn btn-outline w-100">View Details</a>
+          </div>
+        </div>
+        
+        <div class="expedition-card">
+          <img src="../assets/images/kili.png" alt="Kilimanjaro" class="expedition-img">
+          <div class="expedition-body">
+            <div class="expedition-meta">
+              <span class="badge badge-difficulty">Moderate</span>
+              <span class="badge badge-duration">7 Days</span>
+            </div>
+            <h3>Kilimanjaro Machame</h3>
+            <p>The roof of Africa. A trek through five distinct climate zones.</p>
+            <a href="expeditions.html" class="btn btn-outline w-100">View Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Section -->
+  <section class="section" style="background-color: var(--bg-tertiary);">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Latest from the Blog</h2>
+        <p class="section-subtitle">Stay updated with the latest stories, climbing tips, and expedition reports from our team.</p>
+      </div>
+      
+      <div class="grid grid-3">
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800" alt="Everest summit" class="card-img">
+          <div class="mt-3">
+            <span class="badge" style="background-color: var(--accent); color: white; margin-bottom: 0.5rem;">Expedition</span>
+            <h3 class="h5">Summit Success: Everest 2024</h3>
+            <p class="card-text" style="font-size: 0.95rem;">Our team successfully summited Everest with all members reaching the top. Read the full report...</p>
+            <a href="blog.html" class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.875rem;">Read More</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?w=800" alt="Ice climbing" class="card-img">
+          <div class="mt-3">
+            <span class="badge" style="background-color: var(--accent); color: white; margin-bottom: 0.5rem;">Training</span>
+            <h3 class="h5">Essential Ice Climbing Tips</h3>
+            <p class="card-text" style="font-size: 0.95rem;">Master the fundamentals of ice climbing with our guide to techniques and safety gear...</p>
+            <a href="blog.html" class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.875rem;">Read More</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?w=800" alt="Alpine training" class="card-img">
+          <div class="mt-3">
+            <span class="badge" style="background-color: var(--accent); color: white; margin-bottom: 0.5rem;">Gear</span>
+            <h3 class="h5">Preparing for High Altitude</h3>
+            <p class="card-text" style="font-size: 0.95rem;">Learn how to properly acclimatize and prepare your body for your first 6000m peak...</p>
+            <a href="blog.html" class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.875rem;">Read More</a>
+          </div>
+        </article>
+      </div>
+      
+      <div class="text-center mt-5">
+        <a href="blog.html" class="btn btn-primary">View All Blog Posts</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer mt-auto">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-section">
+          <h4>Mountain Expedition</h4>
+          <p>Professional mountain guiding and expedition services for adventurers of all levels.</p>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="expeditions.html">Expeditions</a></li>
+            <li><a href="gear-list.html">Gear List</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Legal</h4>
+          <ul class="footer-links">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Contact</h4>
+          <ul class="footer-links">
+            <li>📧 info@mountainexpedition.com</li>
+            <li>📞 +1 (555) 123-4567</li>
+            <li>📍 Boulder, Colorado, USA</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Mountain Expedition. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- Custom JS -->
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Essential gear and equipment checklist for mountain expeditions and climbing adventures.">
+  <title>Gear List - Mountain Expedition</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/dark-mode.css">
+  <link rel="stylesheet" href="../assets/css/rtl.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">
+        <img src="../assets/images/logo.svg" alt="Mountain Expedition" class="navbar-logo">
+      </a>
+      <button class="navbar-toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+      <ul class="navbar-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="home-2.html">Home 2</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="expeditions.html">Expeditions</a></li>
+        <li><a href="gear-list.html" class="active">Gear</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="../dashboard/index.html" class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Dashboard</a></li>
+        <li class="nav-toggles">
+          <button class="rtl-toggle" id="rtlToggle" aria-label="Toggle RTL">RTL</button>
+          <button class="dark-mode-toggle" aria-label="Toggle dark mode">🌙</button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="hero" style="height: 400px;">
+    <div class="hero-content">
+      <h1>Essential Gear Guide</h1>
+      <p>Complete equipment checklist for your mountain expedition</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Recommended Gear Checklist</h2>
+        <p class="section-subtitle">Essential equipment for safe and successful mountain expeditions</p>
+      </div>
+      
+      <div class="grid grid-2">
+        <div class="card" data-testid="gear-clothing">
+          <h3 class="card-title">🧥 Clothing Layers</h3>
+          <ul style="list-style: none; padding: 0;">
+            <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--border-color);">✓ Base layer (moisture-wicking)</li>
+            <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--border-color);">✓ Mid-layer fleece or down jacket</li>
+            <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--border-color);">✓ Insulated parka (expedition weight)</li>
+            <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--border-color);">✓ Waterproof shell jacket</li>
+            <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--border-color);">✓ Waterproof pants</li>
+            <li style="padding: 0.5rem 0;">✓ Insulated pants (for high altitude)</li>
+          </ul>
+        </div>
+        
+        <div class="card" data-testid="gear-footwear">
+          <h3 class="card-title">👢 Footwear</h3>
+          <ul style="list-style: none; padding: 0;">
+            <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--border-color);">✓ Mountaineering boots (crampon compatible)</li>
+            <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--border-color);">✓ Approach shoes or hiking boots</li>
+            <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--border-color);">✓ Warm socks (wool or synthetic)</li>
+            <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--border-color);">✓ Gaiters</li>
+            <li style="padding: 0.5rem 0;">✓ Camp shoes/sandals</li>
+          </ul>
+        </div>
+        
+        <div class="card" data-testid="gear-technical">
+          <h3 class="card-title">⛏️ Technical Equipment</h3>
+          <ul style="list-style: none; padding: 0;">
+            <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--border-color);">✓ Ice axe (appropriate length)</li>
+            <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--border-color);">✓ Crampons (compatible with boots)</li>
+            <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--border-color);">✓ Climbing harness</li>
+            <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--border-color);">✓ Helmet</li>
+            <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--border-color);">✓ Carabiners and prusiks</li>
+            <li style="padding: 0.5rem 0;">✓ Belay device</li>
+          </ul>
+        </div>
+        
+        <div class="card" data-testid="gear-accessories">
+          <h3 class="card-title">🧤 Accessories</h3>
+          <ul style="list-style: none; padding: 0;">
+            <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--border-color);">✓ Warm hat/beanie</li>
+            <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--border-color);">✓ Sun hat/cap</li>
+            <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--border-color);">✓ Gloves (liner, mid-weight, expedition)</li>
+            <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--border-color);">✓ Sunglasses (category 4)</li>
+            <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--border-color);">✓ Goggles</li>
+            <li style="padding: 0.5rem 0;">✓ Neck gaiter/balaclava</li>
+          </ul>
+        </div>
+        
+        <div class="card" data-testid="gear-camping">
+          <h3 class="card-title">⛺ Camping Equipment</h3>
+          <ul style="list-style: none; padding: 0;">
+            <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--border-color);">✓ Sleeping bag (rated for conditions)</li>
+            <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--border-color);">✓ Sleeping pad</li>
+            <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--border-color);">✓ Backpack (65-75L)</li>
+            <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--border-color);">✓ Headlamp with extra batteries</li>
+            <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--border-color);">✓ Water bottles/hydration system</li>
+            <li style="padding: 0.5rem 0;">✓ Trekking poles</li>
+          </ul>
+        </div>
+        
+        <div class="card" data-testid="gear-personal">
+          <h3 class="card-title">🎒 Personal Items</h3>
+          <ul style="list-style: none; padding: 0;">
+            <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--border-color);">✓ Sunscreen (high SPF)</li>
+            <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--border-color);">✓ Lip balm with SPF</li>
+            <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--border-color);">✓ First aid kit</li>
+            <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--border-color);">✓ Personal medications</li>
+            <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--border-color);">✓ Toiletries</li>
+            <li style="padding: 0.5rem 0;">✓ Duffel bag for base camp gear</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background-color: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Equipment Rental Service</h2>
+        <p class="section-subtitle">Don't have all the gear? We offer rental options</p>
+      </div>
+      
+      <div class="card" style="max-width: 800px; margin: 0 auto;">
+        <h3>Available Rental Equipment</h3>
+        <p>We provide high-quality rental equipment for your convenience:</p>
+        <div class="grid grid-2" style="margin-top: 2rem;">
+          <div>
+            <h5>Technical Gear</h5>
+            <ul>
+              <li>Ice axe - $15/day</li>
+              <li>Crampons - $12/day</li>
+              <li>Harness - $8/day</li>
+              <li>Helmet - $5/day</li>
+            </ul>
+          </div>
+          <div>
+            <h5>Camping Gear</h5>
+            <ul>
+              <li>Sleeping bag (-20°C) - $20/day</li>
+              <li>Sleeping pad - $8/day</li>
+              <li>Backpack - $15/day</li>
+              <li>Trekking poles - $6/day</li>
+            </ul>
+          </div>
+        </div>
+        <div class="text-center mt-4">
+          <a href="contact.html" class="btn btn-primary">Inquire About Rentals</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-section">
+          <h4>Mountain Expedition</h4>
+          <p>Professional mountain guiding and expedition services for adventurers of all levels.</p>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="expeditions.html">Expeditions</a></li>
+            <li><a href="gear-list.html">Gear List</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Resources</h4>
+          <ul class="footer-links">
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="../dashboard/index.html">Client Dashboard</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Contact</h4>
+          <ul class="footer-links">
+            <li>📧 info@mountainexpedition.com</li>
+            <li>📞 +1 (555) 123-4567</li>
+            <li>📍 Boulder, Colorado, USA</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Mountain Expedition. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

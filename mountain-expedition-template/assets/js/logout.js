@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
   if (confirmBtn) {
     confirmBtn.addEventListener('click', function() {
       // Perform logout action - for now just redirect to home
-      window.location.href = '../pages/index.html';
+      window.location.href = '../index.html';
     });
   }
 

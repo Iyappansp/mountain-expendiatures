@@ -1,18 +1,18 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Trip Dossier - Mountain Expedition</title>
-  <link rel="icon" type="image/svg+xml" href="../assets/images/logo.svg">
+  <link rel="icon" type="image/svg+xml" href="/assets/images/logo.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/css/style.css">
-  <link rel="stylesheet" href="../assets/css/dark-mode.css">
-  <link rel="stylesheet" href="../assets/css/rtl.css">
-  <link rel="stylesheet" href="dashboard.css">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/dark-mode.css">
+  <link rel="stylesheet" href="/assets/css/rtl.css">
+  <link rel="stylesheet" href="/dashboard/dashboard.css">
   <style>
     /* Trips Specific Styles */
   </style>
@@ -27,21 +27,21 @@
     <!-- Sidebar -->
     <aside class="dashboard-sidebar">
       <div style="text-align: center; margin-bottom: 2rem; padding: 0 1.5rem;">
-        <a href="../index.html">
-          <img src="../assets/images/logo.svg" alt="Logo" class="sidebar-logo">
+        <a href="/index.html">
+          <img src="/assets/images/logo.svg" alt="Logo" class="sidebar-logo">
         </a>
         <h3 style="color: var(--primary); font-size: 1.2rem;">Client Portal</h3>
         <p style="color: var(--text-light); font-size: 0.8rem;">Welcome, John Doe</p>
       </div>
       
       <ul class="dashboard-nav">
-        <li><a href="index.html" data-testid="nav-overview">📊 Overview</a></li>
-        <li><a href="bookings.html" data-testid="nav-bookings">📅 My Bookings</a></li>
-        <li><a href="trips.html" class="active" data-testid="nav-trips">🗺️ Trip Dossier</a></li>
-        <li><a href="gear.html" data-testid="nav-gear">🎒 Gear Checklist</a></li>
-        <li><a href="profile.html" data-testid="nav-profile">👤 Profile</a></li>
-        <li><a href="settings.html" data-testid="nav-settings">⚙️ Settings</a></li>
-        <li><a href="#" id="logoutBtn" style="margin-top: 2rem; border-top: 1px solid var(--border-color); padding-top: 1rem;">🚪 Log Out</a></li>
+        <li><a href="index.html" data-testid="nav-overview">?? Overview</a></li>
+        <li><a href="bookings.html" data-testid="nav-bookings">?? My Bookings</a></li>
+        <li><a href="trips.html" class="active" data-testid="nav-trips">??? Trip Dossier</a></li>
+        <li><a href="gear.html" data-testid="nav-gear">?? Gear Checklist</a></li>
+        <li><a href="profile.html" data-testid="nav-profile">?? Profile</a></li>
+        <li><a href="settings.html" data-testid="nav-settings">?? Settings</a></li>
+        <li><a href="#" id="logoutBtn" style="margin-top: 2rem; border-top: 1px solid var(--border-color); padding-top: 1rem;">?? Log Out</a></li>
       </ul>
       
       <div style="padding: 0 1.5rem; margin-top: 2rem; display: flex; gap: 0.5rem;">
@@ -55,7 +55,7 @@
 
       <div class="card" style="margin-bottom:2rem;background:linear-gradient(135deg,var(--primary-dark),var(--accent));color:white" data-testid="trip-header">
         <h2 style="color:white">Everest Base Camp Trek</h2>
-        <p style="font-size:1.125rem;color:rgba(255,255,255,.95)">May 15 - May 28, 2025 • 14 Days</p>
+        <p style="font-size:1.125rem;color:rgba(255,255,255,.95)">May 15 - May 28, 2025 � 14 Days</p>
         <div style="display:flex;gap:1rem;margin-top:1rem;flex-wrap:wrap">
           <span class="badge" style="background-color:rgba(255,255,255,.2);color:white;padding:.5rem 1rem">Moderate Difficulty</span>
           <span class="badge" style="background-color:rgba(255,255,255,.2);color:white;padding:.5rem 1rem">Max Altitude: 5,364m</span>
@@ -67,22 +67,22 @@
         <div class="card">
           <h3>Trip Highlights</h3>
           <ul style="list-style:none;padding:0">
-            <li style="padding:.75rem 0;border-bottom:1px solid var(--border-color)">✓ Reach Everest Base Camp at 5,364m</li>
-            <li style="padding:.75rem 0;border-bottom:1px solid var(--border-color)">✓ Visit Kala Patthar viewpoint (5,545m)</li>
-            <li style="padding:.75rem 0;border-bottom:1px solid var(--border-color)">✓ Experience Sherpa culture in Namche Bazaar</li>
-            <li style="padding:.75rem 0;border-bottom:1px solid var(--border-color)">✓ Explore Tengboche Monastery</li>
-            <li style="padding:.75rem 0">✓ Stunning Himalayan mountain views</li>
+            <li style="padding:.75rem 0;border-bottom:1px solid var(--border-color)">? Reach Everest Base Camp at 5,364m</li>
+            <li style="padding:.75rem 0;border-bottom:1px solid var(--border-color)">? Visit Kala Patthar viewpoint (5,545m)</li>
+            <li style="padding:.75rem 0;border-bottom:1px solid var(--border-color)">? Experience Sherpa culture in Namche Bazaar</li>
+            <li style="padding:.75rem 0;border-bottom:1px solid var(--border-color)">? Explore Tengboche Monastery</li>
+            <li style="padding:.75rem 0">? Stunning Himalayan mountain views</li>
           </ul>
         </div>
 
         <div class="card">
           <h3>What's Included</h3>
           <ul style="list-style:none;padding:0">
-            <li style="padding:.75rem 0;border-bottom:1px solid var(--border-color)">✓ Experienced guide & porters</li>
-            <li style="padding:.75rem 0;border-bottom:1px solid var(--border-color)">✓ All meals during trek</li>
-            <li style="padding:.75rem 0;border-bottom:1px solid var(--border-color)">✓ Teahouse accommodations</li>
-            <li style="padding:.75rem 0;border-bottom:1px solid var(--border-color)">✓ Permits & national park fees</li>
-            <li style="padding:.75rem 0">✓ Emergency evacuation insurance</li>
+            <li style="padding:.75rem 0;border-bottom:1px solid var(--border-color)">? Experienced guide & porters</li>
+            <li style="padding:.75rem 0;border-bottom:1px solid var(--border-color)">? All meals during trek</li>
+            <li style="padding:.75rem 0;border-bottom:1px solid var(--border-color)">? Teahouse accommodations</li>
+            <li style="padding:.75rem 0;border-bottom:1px solid var(--border-color)">? Permits & national park fees</li>
+            <li style="padding:.75rem 0">? Emergency evacuation insurance</li>
           </ul>
         </div>
       </div>
@@ -149,9 +149,10 @@
     </main>
   </div>
 
-  <script src="../assets/js/main.js"></script>
-  <script src="../assets/js/dashboard.js"></script>
-  <script src="../assets/js/logout.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/dashboard.js"></script>
+  <script src="/assets/js/logout.js"></script>
 </body>
 </html>
+
 

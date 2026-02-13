@@ -14,74 +14,19 @@
   <link rel="stylesheet" href="../assets/css/dark-mode.css">
   <link rel="stylesheet" href="../assets/css/rtl.css">
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <link rel="stylesheet" href="dashboard.css">
   <style>
-    .dashboard-container {
-      display: flex;
-      min-height: 100vh;
-    }
-    .dashboard-sidebar {
-      width: 250px;
-      background-color: var(--bg-tertiary);
-      border-right: 1px solid var(--border-color);
-      padding: 2rem 0;
-      position: fixed;
-      height: 100vh;
-      overflow-y: auto;
-    }
-    .dashboard-main {
-      flex: 1;
-      margin-left: 250px;
-      padding: 1.5rem; /* Reduced from 2rem */
-    }
-    .dashboard-nav {
-      list-style: none;
-      padding: 0;
-    }
-    .dashboard-nav li {
-      margin-bottom: 0.5rem;
-    }
-    .dashboard-nav a {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-      padding: 0.75rem 1.5rem;
-      color: var(--text-secondary);
-      text-decoration: none;
-      transition: var(--transition);
-    }
-    .dashboard-nav a:hover,
-    .dashboard-nav a.active {
-      background-color: var(--primary);
-      color: white;
-    }
-    .stat-card {
-      background: var(--bg-primary);
-      border: 1px solid var(--border-color);
-      border-radius: var(--border-radius);
-      padding: 1.5rem;
-      text-align: center;
-    }
-    .stat-value {
-      font-size: 2.5rem;
-      font-weight: 700;
-      color: var(--primary);
-      margin: 0.5rem 0;
-    }
-    @media (max-width: 768px) {
-      .dashboard-sidebar {
-        width: 100%;
-        position: relative;
-        height: auto;
-      }
-      .dashboard-main {
-        margin-left: 0;
-      }
-    }
+
   </style>
 </head>
 <body>
   
   <div class="dashboard-container">
+    <button class="sidebar-toggle-btn" id="sidebarToggle">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+    </button>
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
     <!-- Sidebar -->
     <aside class="dashboard-sidebar">
       <div style="text-align: center; margin-bottom: 2rem; padding: 0 1.5rem;">
@@ -93,12 +38,12 @@
       </div>
       
       <ul class="dashboard-nav">
-        <li><a href="/dashboard/index.html" class="active" data-testid="nav-overview">📊 Overview</a></li>
-        <li><a href="/dashboard/bookings.html" data-testid="nav-bookings">📅 My Bookings</a></li>
-        <li><a href="/dashboard/trips.html" data-testid="nav-trips">🗺️ Trip Dossier</a></li>
-        <li><a href="/dashboard/gear.html" data-testid="nav-gear">🎒 Gear Checklist</a></li>
-        <li><a href="/dashboard/profile.html" data-testid="nav-profile">👤 Profile</a></li>
-        <li><a href="/dashboard/settings.html" data-testid="nav-settings">⚙️ Settings</a></li>
+        <li><a href="index.html" class="active" data-testid="nav-overview">📊 Overview</a></li>
+        <li><a href="bookings.html" data-testid="nav-bookings">📅 My Bookings</a></li>
+        <li><a href="trips.html" data-testid="nav-trips">🗺️ Trip Dossier</a></li>
+        <li><a href="gear.html" data-testid="nav-gear">🎒 Gear Checklist</a></li>
+        <li><a href="profile.html" data-testid="nav-profile">👤 Profile</a></li>
+        <li><a href="settings.html" data-testid="nav-settings">⚙️ Settings</a></li>
         <li><a href="#" id="logoutBtn" style="margin-top: 2rem; border-top: 1px solid var(--border-color); padding-top: 1rem;">🚪 Log Out</a></li>
       </ul>
       
@@ -179,21 +124,21 @@
                 <td style="padding: 1rem;">May 15, 2025</td>
                 <td style="padding: 1rem;">14 days</td>
                 <td style="padding: 1rem;"><span class="badge" style="background-color: #10b981; color: white;">Confirmed</span></td>
-                <td style="padding: 1rem;"><a href="/dashboard/trips.html" class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.875rem;">View Details</a></td>
+                <td style="padding: 1rem;"><a href="trips.html" class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.875rem;">View Details</a></td>
               </tr>
               <tr style="border-bottom: 1px solid var(--border-color);" data-testid="booking-row-2">
                 <td style="padding: 1rem; font-weight: 600;">Mont Blanc Ascent</td>
                 <td style="padding: 1rem;">July 20, 2025</td>
                 <td style="padding: 1rem;">6 days</td>
                 <td style="padding: 1rem;"><span class="badge" style="background-color: #f59e0b; color: white;">Pending</span></td>
-                <td style="padding: 1rem;"><a href="/dashboard/trips.html" class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.875rem;">View Details</a></td>
+                <td style="padding: 1rem;"><a href="trips.html" class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.875rem;">View Details</a></td>
               </tr>
               <tr data-testid="booking-row-3">
                 <td style="padding: 1rem; font-weight: 600;">Annapurna Circuit</td>
                 <td style="padding: 1rem;">October 10, 2025</td>
                 <td style="padding: 1rem;">12 days</td>
                 <td style="padding: 1rem;"><span class="badge" style="background-color: #10b981; color: white;">Confirmed</span></td>
-                <td style="padding: 1rem;"><a href="/dashboard/trips.html" class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.875rem;">View Details</a></td>
+                <td style="padding: 1rem;"><a href="trips.html" class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.875rem;">View Details</a></td>
               </tr>
             </tbody>
           </table>
@@ -202,13 +147,13 @@
 
       <!-- Quick Actions -->
       <div class="grid grid-3" style="margin-top: 2rem;">
-        <a href="/dashboard/bookings.html" class="card" style="text-decoration: none; text-align: center; padding: 2rem;">
+        <a href="bookings.html" class="card" style="text-decoration: none; text-align: center; padding: 2rem;">
           <div style="font-size: 3rem; margin-bottom: 1rem;">📅</div>
           <h4>View All Bookings</h4>
           <p style="color: var(--text-secondary);">Manage your expeditions</p>
         </a>
         
-        <a href="/dashboard/gear.html" class="card" style="text-decoration: none; text-align: center; padding: 2rem;">
+        <a href="gear.html" class="card" style="text-decoration: none; text-align: center; padding: 2rem;">
           <div style="font-size: 3rem; margin-bottom: 1rem;">🎒</div>
           <h4>Gear Checklist</h4>
           <p style="color: var(--text-secondary);">Prepare your equipment</p>

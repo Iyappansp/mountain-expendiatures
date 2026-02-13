@@ -48,7 +48,7 @@
         <li><a href="blog.html">Blog</a></li>
         <li><a href="contact.html">Contact</a></li>
         <li><a href="login.html">Login</a></li>
-        <li><a href="dashboard/index.html" class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Dashboard</a></li>
+        <li><a href="dashboard/index.html" class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.9rem; color: white !important;">Dashboard</a></li>
         <li class="nav-toggles">
           <button class="rtl-toggle" id="rtlToggle" aria-label="Toggle RTL">RTL</button>
           <button class="dark-mode-toggle" aria-label="Toggle dark mode">🌙</button>
@@ -68,15 +68,21 @@
   <!-- Our Story -->
   <section class="section">
     <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Our Journey</h2>
+        <p class="section-subtitle">From humble beginnings to global expeditions</p>
+      </div>
+
       <div class="grid grid-2" style="align-items: center; gap: 4rem;">
         <div>
           <img src="https://images.unsplash.com/photo-1522163182402-834f871fd851?w=800" alt="Mountain guide team" style="border-radius: var(--border-radius); box-shadow: var(--shadow-lg);">
         </div>
         <div>
-          <h2>Our Story</h2>
+          <h3 style="margin-bottom: 1.5rem; color: var(--primary);">About Mountain Expedition</h3>
           <p>Founded in 2005, Mountain Expedition began with a simple mission: to share our passion for mountains with adventurers worldwide while maintaining the highest standards of safety and professionalism.</p>
           <p>What started as a small team of three experienced climbers has grown into a premier mountain expedition service with over 50 certified guides and partnerships across the globe's most iconic peaks.</p>
-          <p>We've successfully guided over 1,000 climbers to summits, from beginners taking their first steps on a glacier to experienced mountaineers tackling 8,000-meter peaks.</p>
+          <p>We've successfully guided over 1,000 climbers to summits, from beginners taking their first steps on a glacier to experienced mountaineers tackling 8,000-meter peaks. Our commitment to excellence ensures that every journey is not just a climb, but a life-changing experience.</p>
+          <p>We are dedicated to sustainable tourism and empowering local communities, ensuring that our presence leaves a positive impact on both the environment and the people we trek with.</p>
         </div>
       </div>
     </div>
@@ -161,26 +167,38 @@
     <div class="container">
       <div class="section-header">
         <h2 class="section-title">Certifications & Affiliations</h2>
+        <p class="section-subtitle">Recognized for our commitment to safety and excellence</p>
       </div>
       
       <div class="grid grid-4 text-center">
-        <div>
-          <div style="font-size: 3rem; margin-bottom: 0.5rem;">✓</div>
+        <div class="card h-100" style="padding: 2rem; display: flex; flex-direction: column; align-items: center; justify-content: flex-start; border: none; background: transparent; box-shadow: none;">
+          <div style="width: 80px; height: 80px; margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: center; background: var(--bg-primary); border-radius: 50%; box-shadow: var(--shadow-sm); color: var(--primary);">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+          </div>
           <h4>IFMGA</h4>
           <p>International Federation of Mountain Guides Associations</p>
         </div>
-        <div>
-          <div style="font-size: 3rem; margin-bottom: 0.5rem;">✓</div>
+        
+        <div class="card h-100" style="padding: 2rem; display: flex; flex-direction: column; align-items: center; justify-content: flex-start; border: none; background: transparent; box-shadow: none;">
+          <div style="width: 80px; height: 80px; margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: center; background: var(--bg-primary); border-radius: 50%; box-shadow: var(--shadow-sm); color: var(--primary);">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
           <h4>AMGA</h4>
           <p>American Mountain Guides Association</p>
         </div>
-        <div>
-          <div style="font-size: 3rem; margin-bottom: 0.5rem;">✓</div>
+        
+        <div class="card h-100" style="padding: 2rem; display: flex; flex-direction: column; align-items: center; justify-content: flex-start; border: none; background: transparent; box-shadow: none;">
+          <div style="width: 80px; height: 80px; margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: center; background: var(--bg-primary); border-radius: 50%; box-shadow: var(--shadow-sm); color: var(--primary);">
+             <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 2a2 2 0 0 0-2 2v5H4a2 2 0 0 0-2 2v2c0 1.1.9 2 2 2h5v5c0 1.1.9 2 2 2h2a2 2 0 0 0 2-2v-5h5a2 2 0 0 0 2-2v-2a2 2 0 0 0-2-2h-5V4a2 2 0 0 0-2-2h-2z"/></svg>
+          </div>
           <h4>Wilderness Medical</h4>
           <p>WFR & WEMT Certified</p>
         </div>
-        <div>
-          <div style="font-size: 3rem; margin-bottom: 0.5rem;">✓</div>
+        
+        <div class="card h-100" style="padding: 2rem; display: flex; flex-direction: column; align-items: center; justify-content: flex-start; border: none; background: transparent; box-shadow: none;">
+          <div style="width: 80px; height: 80px; margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: center; background: var(--bg-primary); border-radius: 50%; box-shadow: var(--shadow-sm); color: var(--primary);">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17a5 5 0 0 1 5-5 5 5 0 0 1 5 5"/><path d="M12 2v10"/><path d="M12 12a5 5 0 0 1 5-5 5 5 0 0 1 5 5"/><path d="M8 12a5 5 0 0 1-5 5 5 5 0 0 1 5-5"/></svg>
+          </div>
           <h4>Leave No Trace</h4>
           <p>Master Educators</p>
         </div>
@@ -228,7 +246,7 @@
       </div>
       
       <div class="footer-bottom">
-        <p>&copy; 2025 Mountain Expedition. All rights reserved.</p>
+        <!-- <p>&copy; 2026 Mountain Expedition. All rights reserved.</p> -->
       </div>
     </div>
   </footer>

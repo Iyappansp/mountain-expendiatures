@@ -10,12 +10,37 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Dashboard Sidebar Toggle
 function initDashboardSidebar() {
-  const sidebarToggle = document.querySelector('.sidebar-toggle');
+  const sidebarToggle = document.getElementById('sidebarToggle');
+  const sidebarOverlay = document.getElementById('sidebarOverlay');
   const sidebar = document.querySelector('.dashboard-sidebar');
   
+  // Mobile toggle behavior
   if (sidebarToggle && sidebar) {
-    sidebarToggle.addEventListener('click', function() {
-      sidebar.classList.toggle('collapsed');
+    sidebarToggle.addEventListener('click', function(e) {
+      e.stopPropagation(); // Prevent immediate closing if logic conflicts
+      sidebar.classList.toggle('active');
+      if (sidebarOverlay) {
+        sidebarOverlay.classList.toggle('active');
+      }
+    });
+  }
+
+  // Overlay click to close
+  if (sidebarOverlay && sidebar) {
+    sidebarOverlay.addEventListener('click', function() {
+      sidebar.classList.remove('active');
+      sidebarOverlay.classList.remove('active');
+    });
+  }
+
+  // Close sidebar when clicking a link on mobile
+  if (window.innerWidth < 992) {
+    const navLinks = document.querySelectorAll('.dashboard-nav a');
+    navLinks.forEach(link => {
+      link.addEventListener('click', function() {
+        if (sidebar) sidebar.classList.remove('active');
+        if (sidebarOverlay) sidebarOverlay.classList.remove('active');
+      });
     });
   }
 }

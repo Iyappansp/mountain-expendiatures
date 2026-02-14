@@ -46,8 +46,8 @@
 }
 
 .dashboard-nav a:hover {
-  background-color: var(--primary-light);
-  color: white;
+  background-color: var(--bg-primary);
+  color: var(--primary);
 }
 
 .dashboard-nav a.active {

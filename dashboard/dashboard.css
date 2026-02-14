@@ -45,7 +45,11 @@
   transition: var(--transition);
 }
 
-.dashboard-nav a:hover,
+.dashboard-nav a:hover {
+  background-color: var(--primary-light);
+  color: white;
+}
+
 .dashboard-nav a.active {
   background-color: var(--primary);
   color: white;

@@ -602,6 +602,8 @@ textarea.form-control {
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
     display: none;
     z-index: 1000;
+    max-height: calc(100vh - 80px);
+    overflow-y: auto;
   }
   
   .navbar-menu.active {

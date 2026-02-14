@@ -512,6 +512,21 @@ textarea.form-control {
   color: var(--text-primary);
 }
 
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.footer-brand img {
+  margin: 0;
+}
+
+.footer-brand h4 {
+  margin: 0;
+}
+
 .footer-links {
   list-style: none;
 }

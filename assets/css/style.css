@@ -168,7 +168,8 @@ img {
   gap: 0.75rem; /* Tighter gap for better flow */
   align-items: center;
   margin: 0;
-  flex: 1; /* Allow it to grow but it will stay left-aligned due to container justify-content */
+  flex: 1; 
+  justify-content: center;
 }
 
 .navbar-menu a {

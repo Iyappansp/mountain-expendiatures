@@ -1,84 +1,112 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dashboard - Mountain Expedition</title>
-  <link rel="icon" type="image/svg+xml" href="/assets/images/logo.svg">
+  <link rel="icon" type="image/svg+xml" href="../assets/images/logo.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@700;800&display=swap"
+    rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/css/style.css">
-  <link rel="stylesheet" href="/assets/css/dark-mode.css">
-  <link rel="stylesheet" href="/assets/css/rtl.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/dark-mode.css">
+  <link rel="stylesheet" href="../assets/css/rtl.css">
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
-  <link rel="stylesheet" href="/dashboard/dashboard.css">
+  <link rel="stylesheet" href="dashboard.css">
   <style>
 
   </style>
 </head>
+
 <body>
-  
+
   <div class="dashboard-container">
     <button class="sidebar-toggle-btn" id="sidebarToggle">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="3" y1="12" x2="21" y2="12"></line>
+        <line x1="3" y1="6" x2="21" y2="6"></line>
+        <line x1="3" y1="18" x2="21" y2="18"></line>
+      </svg>
     </button>
     <div class="sidebar-overlay" id="sidebarOverlay"></div>
 
     <!-- Sidebar -->
     <aside class="dashboard-sidebar">
       <div style="text-align: center; margin-bottom: 2rem; padding: 0 1.5rem;">
-        <a href="/index.html">
-          <img src="/assets/images/logo.svg" alt="Logo" class="sidebar-logo">
+        <a href="/index.html" class="d-flex align-items-center justify-content-center gap-2 mb-3 text-decoration-none">
+          <img src="../assets/images/logo.svg" alt="Logo" class="sidebar-logo mb-0">
+          <span class="fw-bold text-primary" style="font-size: 1.1rem; font-family: 'Montserrat', sans-serif;">Mountain
+            Expedition</span>
         </a>
         <h3 style="color: var(--primary); font-size: 1.2rem;">Client Portal</h3>
         <p style="color: var(--text-light); font-size: 0.8rem;">Welcome, John Doe</p>
       </div>
-      
+
       <ul class="dashboard-nav">
-        <li><a href="/dashboard/index.html" class="active" data-testid="nav-overview"> Overview</a></li>
-        <li><a href="/dashboard/bookings.html" data-testid="nav-bookings"> My Bookings</a></li>
-        <li><a href="/dashboard/trips.html" data-testid="nav-trips"> Trip Dossier</a></li>
-        <li><a href="/dashboard/gear.html" data-testid="nav-gear"> Gear Checklist</a></li>
-        <li><a href="/dashboard/profile.html" data-testid="nav-profile"> Profile</a></li>
-        <li><a href="/dashboard/settings.html" data-testid="nav-settings"> Settings</a></li>
-        <li><a href="#" id="logoutBtn" style="margin-top: 2rem; border-top: 1px solid var(--border-color); padding-top: 1rem;"> Log Out</a></li>
+        <li><a href="index.html" class="active" data-testid="nav-overview"> Overview</a></li>
+        <li><a href="bookings.html" data-testid="nav-bookings"> My Bookings</a></li>
+        <li><a href="trips.html" data-testid="nav-trips"> Trip Dossier</a></li>
+        <li><a href="gear.html" data-testid="nav-gear"> Gear Checklist</a></li>
+        <li><a href="profile.html" data-testid="nav-profile"> Profile</a></li>
+        <li><a href="settings.html" data-testid="nav-settings"> Settings</a></li>
+        <li><a href="#" id="logoutBtn"
+            class="btn btn-danger w-100 text-white mt-4 d-flex align-items-center justify-content-center gap-2"
+            style="border-top: none; padding: 0.75rem 1rem;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+              <polyline points="16 17 21 12 16 7"></polyline>
+              <line x1="21" y1="12" x2="9" y2="12"></line>
+            </svg>
+            Log Out
+          </a></li>
       </ul>
-      
-      <div style="padding: 0 1.5rem; margin-top: 2rem; display: flex; gap: 0.5rem;">
-        <button class="rtl-toggle" id="rtlToggle" style="flex: 1; padding: 0.5rem;">RTL</button>
-        <button class="dark-mode-toggle" style="flex: 1; padding: 0.5rem;">Theme</button>
-      </div>
+
+
     </aside>
 
     <!-- Main Content -->
     <main class="dashboard-main">
-      <div style="margin-bottom: 2rem;">
-        <h1>Dashboard Overview</h1>
-        <p style="color: var(--text-secondary);">Welcome back! Here's your expedition summary.</p>
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <div>
+          <h1>Dashboard Overview</h1>
+          <p style="color: var(--text-secondary);">Welcome back! Here's your expedition summary.</p>
+        </div>
+        <div class="d-flex gap-2">
+          <button class="rtl-toggle" id="rtlToggle" style="padding: 0.5rem 1rem;">RTL</button>
+          <button class="dark-mode-toggle" style="padding: 0.5rem 1rem;">Theme</button>
+        </div>
       </div>
 
       <!-- Stats Grid -->
       <div class="grid grid-4" style="margin-bottom: 1.5rem;">
         <div class="stat-card" data-testid="stat-bookings">
-          <div style="font-size: 2rem; margin-bottom: 0.5rem;"><span></span></div><div class="stat-value">3</div>
+          <div style="font-size: 2rem; margin-bottom: 0.5rem;"><span></span></div>
+          <div class="stat-value">3</div>
           <div style="color: var(--text-secondary);">Active Bookings</div>
         </div>
-        
+
         <div class="stat-card" data-testid="stat-completed">
-          <div style="font-size: 2rem; margin-bottom: 0.5rem;"><span></span></div><div class="stat-value">8</div>
+          <div style="font-size: 2rem; margin-bottom: 0.5rem;"><span></span></div>
+          <div class="stat-value">8</div>
           <div style="color: var(--text-secondary);">Completed Trips</div>
         </div>
-        
+
         <div class="stat-card" data-testid="stat-peaks">
-          <div style="font-size: 2rem; margin-bottom: 0.5rem;"><span></span></div><div class="stat-value">12</div>
+          <div style="font-size: 2rem; margin-bottom: 0.5rem;"><span></span></div>
+          <div class="stat-value">12</div>
           <div style="color: var(--text-secondary);">Peaks Summited</div>
         </div>
-        
+
         <div class="stat-card" data-testid="stat-hours">
-          <div style="font-size: 2rem; margin-bottom: 0.5rem;"><span></span></div><div class="stat-value">156</div>
+          <div style="font-size: 2rem; margin-bottom: 0.5rem;"><span></span></div>
+          <div class="stat-value">156</div>
           <div style="color: var(--text-secondary);">Climbing Hours</div>
         </div>
       </div>
@@ -91,7 +119,7 @@
             <canvas id="bookingsChart"></canvas>
           </div>
         </div>
-        
+
         <div class="card">
           <h3 style="margin-bottom: 1.5rem;">Expedition Types</h3>
           <div style="height: 250px; direction: ltr;">
@@ -119,22 +147,28 @@
                 <td style="padding: 1rem; font-weight: 600;">Everest Base Camp</td>
                 <td style="padding: 1rem;">May 15, 2025</td>
                 <td style="padding: 1rem;">14 days</td>
-                <td style="padding: 1rem;"><span class="badge" style="background-color: #10b981; color: white;">Confirmed</span></td>
-                <td style="padding: 1rem;"><a href="/dashboard/trips.html" class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.875rem;">View Details</a></td>
+                <td style="padding: 1rem;"><span class="badge"
+                    style="background-color: #10b981; color: white;">Confirmed</span></td>
+                <td style="padding: 1rem;"><a href="trips.html" class="btn btn-outline"
+                    data-testid="trip-details-1">View Details</a></td>
               </tr>
-              <tr style="border-bottom: 1px solid var(--border-color);" data-testid="booking-row-2">
+              <tr style="border-bottom: 1px solid var(--border-color);">
                 <td style="padding: 1rem; font-weight: 600;">Mont Blanc Ascent</td>
                 <td style="padding: 1rem;">July 20, 2025</td>
                 <td style="padding: 1rem;">6 days</td>
-                <td style="padding: 1rem;"><span class="badge" style="background-color: #f59e0b; color: white;">Pending</span></td>
-                <td style="padding: 1rem;"><a href="/dashboard/trips.html" class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.875rem;">View Details</a></td>
+                <td style="padding: 1rem;"><span class="badge"
+                    style="background-color: #f59e0b; color: white;">Pending</span></td>
+                <td style="padding: 1rem;"><a href="trips.html" class="btn btn-outline"
+                    data-testid="trip-details-2">View Details</a></td>
               </tr>
-              <tr data-testid="booking-row-3">
+              <tr style="border-bottom: 1px solid var(--border-color);">
                 <td style="padding: 1rem; font-weight: 600;">Annapurna Circuit</td>
                 <td style="padding: 1rem;">October 10, 2025</td>
                 <td style="padding: 1rem;">12 days</td>
-                <td style="padding: 1rem;"><span class="badge" style="background-color: #10b981; color: white;">Confirmed</span></td>
-                <td style="padding: 1rem;"><a href="/dashboard/trips.html" class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.875rem;">View Details</a></td>
+                <td style="padding: 1rem;"><span class="badge"
+                    style="background-color: #10b981; color: white;">Confirmed</span></td>
+                <td style="padding: 1rem;"><a href="trips.html" class="btn btn-outline"
+                    data-testid="trip-details-3">View Details</a></td>
               </tr>
             </tbody>
           </table>
@@ -143,18 +177,21 @@
 
       <!-- Quick Actions -->
       <div class="grid grid-3" style="margin-top: 2rem;">
-        <a href="/dashboard/bookings.html" class="card" style="text-decoration: none; text-align: center; padding: 2rem;">
-          <div style="font-size: 3rem; margin-bottom: 1rem;"><span></span></div><h4>View All Bookings</h4>
+        <a href="bookings.html" class="card" style="text-decoration: none; text-align: center; padding: 2rem;">
+          <div style="font-size: 3rem; margin-bottom: 1rem;"><span></span></div>
+          <h4>View All Bookings</h4>
           <p style="color: var(--text-secondary);">Manage your expeditions</p>
         </a>
-        
-        <a href="/dashboard/gear.html" class="card" style="text-decoration: none; text-align: center; padding: 2rem;">
-          <div style="font-size: 3rem; margin-bottom: 1rem;"><span></span></div><h4>Gear Checklist</h4>
+
+        <a href="gear.html" class="card" style="text-decoration: none; text-align: center; padding: 2rem;">
+          <div style="font-size: 3rem; margin-bottom: 1rem;"><span></span></div>
+          <h4>Gear Checklist</h4>
           <p style="color: var(--text-secondary);">Prepare your equipment</p>
         </a>
-        
-        <a href="/contact.html" class="card" style="text-decoration: none; text-align: center; padding: 2rem;">
-          <div style="font-size: 3rem; margin-bottom: 1rem;"><span></span></div><h4>Contact Support</h4>
+
+        <a href="../contact.html" class="card" style="text-decoration: none; text-align: center; padding: 2rem;">
+          <div style="font-size: 3rem; margin-bottom: 1rem;"><span></span></div>
+          <h4>Contact Support</h4>
           <p style="color: var(--text-secondary);">Get help from our team</p>
         </a>
       </div>
@@ -162,15 +199,9 @@
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="/assets/js/main.js"></script>
-  <script src="/assets/js/dashboard.js"></script>
-  <script src="/assets/js/logout.js"></script>
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/dashboard.js"></script>
+  <script src="../assets/js/logout.js"></script>
 </body>
+
 </html>
-
-
-
-
-
-
-

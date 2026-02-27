@@ -1,25 +1,31 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Mountain expedition stories, climbing tips, and adventure updates from our guides.">
   <title>Blog - Mountain Expedition</title>
-  <link rel="icon" type="image/svg+xml" href="/assets/images/logo.svg">
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@700;800&display=swap"
+    rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/css/style.css">
-  <link rel="stylesheet" href="/assets/css/dark-mode.css">
-  <link rel="stylesheet" href="/assets/css/rtl.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/dark-mode.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
 </head>
+
 <body>
   <nav class="navbar">
     <div class="container">
-      <a href="index.html" class="navbar-brand">
-        <img src="/assets/images/logo.svg" alt="Mountain Expedition" class="navbar-logo">
+      <a href="index.html" class="navbar-brand d-flex align-items-center gap-2 text-decoration-none">
+        <img src="assets/images/logo.svg" alt="Mountain Expedition Logo" class="navbar-logo">
+        <span class="fw-bold text-primary" style="font-size: 1.1rem; font-family: 'Montserrat', sans-serif;">Mountain
+          Expedition</span>
       </a>
       <button class="navbar-toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
       <ul class="navbar-menu">
@@ -31,8 +37,8 @@
         <li><a href="gear-list.html">Gear</a></li>
         <li><a href="blog.html" class="active">Blog</a></li>
         <li><a href="contact.html">Contact</a></li>
-        <li><a href="login.html">Login</a></li>
-        <li><a href="/dashboard/index.html" class="btn btn-primary">Dashboard</a></li>
+        <li><a href="login.html" class="btn btn-primary text-white py-2 px-4 rounded-pill ms-lg-3">Login</a></li>
+        <li><a href="dashboard/index.html" class="btn btn-primary">Dashboard</a></li>
         <li class="nav-toggles">
           <button class="rtl-toggle" id="rtlToggle" aria-label="Toggle RTL">RTL</button>
           <button class="dark-mode-toggle" aria-label="Toggle dark mode">🌙</button>
@@ -52,81 +58,123 @@
     <div class="container">
       <div class="grid grid-3">
         <!-- Article 1: Expedition Log -->
-        <article class="card" data-testid="blog-post-1">
-          <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800" alt="Everest Expedition 2024" class="card-img" loading="lazy">
-          <div class="card-meta d-flex justify-content-between align-items-center mb-2">
-            <span class="badge" style="background-color: var(--accent); color: white;">Featured</span>
-            <span style="color: var(--text-light); font-size: 0.85rem;">Dec 15, 2025</span>
+        <article class="card d-flex flex-column h-100" data-testid="blog-post-1">
+          <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800" alt="Everest Expedition 2024"
+            class="card-img" loading="lazy">
+          <div class="p-4 d-flex flex-column flex-grow-1">
+            <div class="card-meta d-flex justify-content-between align-items-center mb-2">
+              <span class="badge" style="background-color: var(--accent); color: white;">Featured</span>
+              <span style="color: var(--text-light); font-size: 0.85rem;">Dec 15, 2025</span>
+            </div>
+            <h3 class="card-title">Conquering Everest: A Season of Triumph</h3>
+            <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 0.5rem;">By <strong>John
+                Anderson</strong> • Senior Guide</p>
+            <p class="card-text">Our 2024 expedition team faced unprecedented challenges, but perseverance led to a
+              historic summit success. Read the full journey log...</p>
+            <div class="mt-auto">
+              <a href="#" class="btn btn-outline w-100 mt-2">Read Full Story</a>
+            </div>
           </div>
-          <h3 class="card-title">Conquering Everest: A Season of Triumph</h3>
-          <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 0.5rem;">By <strong>John Anderson</strong> • Senior Guide</p>
-          <p class="card-text">Our 2024 expedition team faced unprecedented challenges, but perseverance led to a historic summit success. Read the full journey log...</p>
-          <a href="#" class="btn btn-outline w-100 mt-2">Read Full Story</a>
         </article>
 
         <!-- Article 2: Technical Skills -->
-        <article class="card" data-testid="blog-post-2">
-          <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?w=800" alt="Ice Climbing Techniques" class="card-img" loading="lazy">
-           <div class="card-meta d-flex justify-content-between align-items-center mb-2">
-            <span class="badge" style="background-color: var(--secondary-light); color: white;">Skills</span>
-            <span style="color: var(--text-light); font-size: 0.85rem;">Dec 10, 2025</span>
+        <article class="card d-flex flex-column h-100" data-testid="blog-post-2">
+          <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?w=800" alt="Ice Climbing Techniques"
+            class="card-img" loading="lazy">
+          <div class="p-4 d-flex flex-column flex-grow-1">
+            <div class="card-meta d-flex justify-content-between align-items-center mb-2">
+              <span class="badge" style="background-color: var(--secondary-light); color: white;">Skills</span>
+              <span style="color: var(--text-light); font-size: 0.85rem;">Dec 10, 2025</span>
+            </div>
+            <h3 class="card-title">Mastering Vertical Ice: key Techniques</h3>
+            <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 0.5rem;">By <strong>Sarah
+                Chen</strong> • Technical Instructor</p>
+            <p class="card-text">Essential footwork, tool placement, and safety protocols for aspiring ice climbers
+              looking to tackle frozen waterfalls effectively.</p>
+            <div class="mt-auto">
+              <a href="#" class="btn btn-outline w-100 mt-2">View Guide</a>
+            </div>
           </div>
-          <h3 class="card-title">Mastering Vertical Ice: key Techniques</h3>
-          <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 0.5rem;">By <strong>Sarah Chen</strong> • Technical Instructor</p>
-          <p class="card-text">Essential footwork, tool placement, and safety protocols for aspiring ice climbers looking to tackle frozen waterfalls effectively.</p>
-          <a href="#" class="btn btn-outline w-100 mt-2">View Guide</a>
         </article>
 
         <!-- Article 3: Preparation -->
-        <article class="card" data-testid="blog-post-3">
-          <img src="https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?w=800" alt="High Altitude Training" class="card-img" loading="lazy">
-           <div class="card-meta d-flex justify-content-between align-items-center mb-2">
-            <span class="badge" style="background-color: var(--secondary-light); color: white;">Health</span>
-            <span style="color: var(--text-light); font-size: 0.85rem;">Dec 05, 2025</span>
+        <article class="card d-flex flex-column h-100" data-testid="blog-post-3">
+          <img src="https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?w=800" alt="High Altitude Training"
+            class="card-img" loading="lazy">
+          <div class="p-4 d-flex flex-column flex-grow-1">
+            <div class="card-meta d-flex justify-content-between align-items-center mb-2">
+              <span class="badge" style="background-color: var(--secondary-light); color: white;">Health</span>
+              <span style="color: var(--text-light); font-size: 0.85rem;">Dec 05, 2025</span>
+            </div>
+            <h3 class="card-title">The Science of Acclimatization</h3>
+            <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 0.5rem;">By <strong>Dr. Michael
+                Torres</strong> • Expedition Medic</p>
+            <p class="card-text">Understanding how your body adapts to thin air is crucial. Learn our proven strategies
+              for safe high-altitude progression.</p>
+            <div class="mt-auto">
+              <a href="#" class="btn btn-outline w-100 mt-2">Learn More</a>
+            </div>
           </div>
-          <h3 class="card-title">The Science of Acclimatization</h3>
-          <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 0.5rem;">By <strong>Dr. Michael Torres</strong> • Expedition Medic</p>
-          <p class="card-text">Understanding how your body adapts to thin air is crucial. Learn our proven strategies for safe high-altitude progression.</p>
-          <a href="#" class="btn btn-outline w-100 mt-2">Learn More</a>
         </article>
 
         <!-- Article 4: Safety -->
-        <article class="card">
-          <img src="https://images.unsplash.com/photo-1522163182402-834f871fd851?w=800" alt="Avalanche Safety" class="card-img" loading="lazy">
-           <div class="card-meta d-flex justify-content-between align-items-center mb-2">
-            <span class="badge" style="background-color: var(--primary); color: white;">Safety</span>
-            <span style="color: var(--text-light); font-size: 0.85rem;">Nov 28, 2025</span>
+        <div class="card d-flex flex-column h-100">
+          <img src="https://images.unsplash.com/photo-1522163182402-834f871fd851" alt="Blog Post" class="card-img">
+          <div class="p-4 d-flex flex-column flex-grow-1">
+            <div class="card-meta d-flex justify-content-between align-items-center mb-2">
+              <span class="badge" style="background-color: var(--primary); color: white;">Safety</span>
+              <span style="color: var(--text-light); font-size: 0.85rem;">Nov 28, 2025</span>
+            </div>
+            <h3 class="card-title">Avalanche Awareness: Reading the Snow</h3>
+            <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 0.5rem;">By <strong>Safety
+                Team</strong></p>
+            <p class="card-text">Critical knowledge for backcountry travel. Identify red flags in the snowpack and
+              mitigate risks before they become dangers.</p>
+            <div class="mt-auto">
+              <a href="#" class="btn btn-outline w-100 mt-2">Safety Manual</a>
+            </div>
           </div>
-          <h3 class="card-title">Avalanche Awareness: Reading the Snow</h3>
-          <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 0.5rem;">By <strong>Safety Team</strong></p>
-          <p class="card-text">Critical knowledge for backcountry travel. Identify red flags in the snowpack and mitigate risks before they become dangers.</p>
-          <a href="#" class="btn btn-outline w-100 mt-2">Safety Manual</a>
-        </article>
+        </div>
 
         <!-- Article 5: Gear -->
-        <article class="card">
-          <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800" alt="Mountaineering Gear 2025" class="card-img" loading="lazy">
-           <div class="card-meta d-flex justify-content-between align-items-center mb-2">
-            <span class="badge" style="background-color: var(--secondary); color: white;">Gear</span>
-            <span style="color: var(--text-light); font-size: 0.85rem;">Nov 20, 2025</span>
+        <article class="card d-flex flex-column h-100">
+          <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800" alt="Mountaineering Gear 2025"
+            class="card-img" loading="lazy">
+          <div class="p-4 d-flex flex-column flex-grow-1">
+            <div class="card-meta d-flex justify-content-between align-items-center mb-2">
+              <span class="badge" style="background-color: var(--secondary); color: white;">Gear</span>
+              <span style="color: var(--text-light); font-size: 0.85rem;">Nov 20, 2025</span>
+            </div>
+            <h3 class="card-title">Best High-Altitude Boots of 2025</h3>
+            <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 0.5rem;">By <strong>Equipment
+                Team</strong></p>
+            <p class="card-text">We tested the top contenders in extreme conditions. See which boots kept our toes warm
+              on
+              the 8000m peaks this season.</p>
+            <div class="mt-auto">
+              <a href="#" class="btn btn-outline w-100 mt-2">Read Review</a>
+            </div>
           </div>
-          <h3 class="card-title">Best High-Altitude Boots of 2025</h3>
-          <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 0.5rem;">By <strong>Equipment Team</strong></p>
-          <p class="card-text">We tested the top contenders in extreme conditions. See which boots kept our toes warm on the 8000m peaks this season.</p>
-          <a href="#" class="btn btn-outline w-100 mt-2">Read Review</a>
         </article>
 
         <!-- Article 6: Beginner Guide -->
-        <article class="card">
-          <img src="https://images.unsplash.com/photo-1519904981063-b0cf448d479e?w=800" alt="Training for 6000m" class="card-img" loading="lazy">
-           <div class="card-meta d-flex justify-content-between align-items-center mb-2">
-            <span class="badge" style="background-color: var(--secondary-light); color: white;">Training</span>
-            <span style="color: var(--text-light); font-size: 0.85rem;">Nov 15, 2025</span>
+        <article class="card d-flex flex-column h-100">
+          <img src="https://images.unsplash.com/photo-1519904981063-b0cf448d479e?w=800" alt="Training for 6000m"
+            class="card-img" loading="lazy">
+          <div class="p-4 d-flex flex-column flex-grow-1">
+            <div class="card-meta d-flex justify-content-between align-items-center mb-2">
+              <span class="badge" style="background-color: var(--secondary-light); color: white;">Training</span>
+              <span style="color: var(--text-light); font-size: 0.85rem;">Nov 15, 2025</span>
+            </div>
+            <h3 class="card-title">Your First 6000m Peak: A Roadmap</h3>
+            <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 0.5rem;">By <strong>Sarah
+                Chen</strong> • Technical Instructor</p>
+            <p class="card-text">From physical conditioning to mental preparation, here is the complete roadmap to
+              standing on your first major summit.</p>
+            <div class="mt-auto">
+              <a href="#" class="btn btn-outline w-100 mt-2">Get Started</a>
+            </div>
           </div>
-          <h3 class="card-title">Your First 6000m Peak: A Roadmap</h3>
-          <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 0.5rem;">By <strong>Sarah Chen</strong> • Technical Instructor</p>
-          <p class="card-text">From physical conditioning to mental preparation, here is the complete roadmap to standing on your first major summit.</p>
-          <a href="#" class="btn btn-outline w-100 mt-2">Get Started</a>
         </article>
       </div>
     </div>
@@ -136,9 +184,9 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-section">
-          <a href="/index.html" class="footer-brand">
-            <img src="/assets/images/logo.svg" alt="Mountain Expedition" style="height: 40px;">
-            <h4>Mountain Expedition</h4>
+          <a href="index.html" class="footer-brand d-flex align-items-center gap-2 text-decoration-none">
+            <img src="assets/images/logo.svg" alt="Mountain Expedition" style="height: 40px;">
+            <h4 class="mb-0">Mountain Expedition</h4>
           </a>
           <p>Professional mountain guiding and expedition services for adventurers of all levels.</p>
         </div>
@@ -156,7 +204,7 @@
           <ul class="footer-links">
             <li><a href="blog.html">Blog</a></li>
             <li><a href="contact.html">Contact</a></li>
-            <li><a href="/dashboard/index.html">Client Dashboard</a></li>
+            <li><a href="dashboard/index.html">Client Dashboard</a></li>
             <li><a href="#">FAQs</a></li>
           </ul>
         </div>
@@ -176,7 +224,7 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="/assets/js/main.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
-</html>
 
+</html>

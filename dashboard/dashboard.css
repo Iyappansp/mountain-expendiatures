@@ -13,6 +13,7 @@
   position: fixed;
   height: 100vh;
   overflow-y: auto;
+  -webkit-overflow-scrolling: touch; /* Add iOS smooth scrolling */
   z-index: 1000;
   transition: transform 0.3s ease-in-out;
   left: 0;
@@ -35,24 +36,31 @@
   margin-bottom: 0.5rem;
 }
 
-.dashboard-nav a {
+.dashboard-nav a,
+body.dark-mode .dashboard-nav a {
   display: flex;
   align-items: center;
   gap: 1rem;
-  padding: 0.75rem 1.5rem;
+  padding: 0.85rem 1rem;
+  margin: 0 1rem;
+  border-radius: var(--border-radius);
   color: var(--text-secondary);
   text-decoration: none;
+  font-weight: 500;
   transition: var(--transition);
 }
 
-.dashboard-nav a:hover {
+.dashboard-nav a:hover,
+body.dark-mode .dashboard-nav a:hover {
   background-color: var(--bg-primary);
   color: var(--primary);
 }
 
-.dashboard-nav a.active {
+.dashboard-nav a.active,
+body.dark-mode .dashboard-nav a.active {
   background-color: var(--primary);
-  color: white;
+  color: white !important;
+  box-shadow: var(--shadow-sm);
 }
 
 .stat-card {
@@ -122,6 +130,7 @@
     transform: translateX(-100%);
     width: 280px;
     box-shadow: var(--shadow-lg);
+    padding-bottom: 5rem; /* Ensure last items don't hide behind native UI */
   }
 
   .dashboard-sidebar.active {

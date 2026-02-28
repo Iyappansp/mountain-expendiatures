@@ -717,29 +717,32 @@
     .navbar-menu a {
       width: 100%;
       display: block;
-      padding: 1rem;
-      font-size: 1rem;
-      text-align: center;
+      padding: 1rem 2rem;
+      font-size: 1.1rem;
+      text-align: left; /* Normal links left-aligned */
       border-radius: var(--border-radius);
       transition: all 0.2s ease;
     }
 
-    .navbar-menu a:hover {
+    .navbar-menu a:hover, .navbar-menu a.active {
       background-color: var(--bg-tertiary);
       color: var(--primary);
       font-weight: 600;
     }
 
-    /* Special styling for Dashboard button in menu */
+    /* Specifically center Login and Dashboard buttons */
     .navbar-menu a.btn-primary {
-      background-color: var(--primary);
+      background-color: var(--primary) !important;
       color: white !important;
-      margin-top: 0.25rem;
-      padding: 0.6rem; /* Reduced padding from 1rem default */
-      font-size: 0.95rem; /* Reduced font-size slightly */
-      max-width: 80%; /* Reduced width */
-      margin-left: auto;
-      margin-right: auto;
+      margin: 1rem auto 0.5rem !important; /* Center with margin auto */
+      padding: 0.8rem 2rem !important;
+      font-size: 1rem !important;
+      max-width: 280px !important; /* Fixed maximum width for buttons */
+      text-align: center !important; /* Force center text */
+      display: flex !important;
+      justify-content: center !important;
+      align-items: center !important;
+      border-radius: 50px !important; /* Rounded buttons */
     }
 
     .navbar-menu a.btn-primary:hover {

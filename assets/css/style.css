@@ -174,16 +174,16 @@
   .navbar-logo {
     height: auto;
     width: auto;
-    max-height: 4.5rem;
-    /* Standard navbar height */
+    max-height: 6.0rem;
+    /* Increased from 4.5rem */
     object-fit: contain;
     transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   }
 
   @media (max-width: 1024px) {
     .navbar-logo {
-      max-height: 40px;
-      /* Scale down for mobile/tablet */
+      max-height: 50px;
+      /* Increased from 40px */
     }
   }
 

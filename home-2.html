@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Mountain Expedition - Experience the thrill of high altitude adventures.">
   <title>Mountain Expedition - Adventure Awaits</title>
   <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
-  
+
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
-  
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@700;800&display=swap"
+    rel="stylesheet">
+
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
-  
+
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  
+
   <!-- Custom CSS -->
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/dark-mode.css">
@@ -29,27 +32,29 @@
       background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
       height: 700px;
     }
+
     .hero-variant::before {
       opacity: 0.5;
       background-image: url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1600');
     }
   </style>
 </head>
+
 <body class="d-flex flex-column min-vh-100">
-  
+
   <!-- Navigation -->
   <nav class="navbar">
     <div class="container">
       <a href="index.html" class="navbar-brand">
-        <img src="assets/images/logo.svg" alt="Mountain Expedition" class="navbar-logo">
+        <img src="assets/images/logo.png" alt="Mountain Expedition" class="navbar-logo">
       </a>
-      
+
       <button class="navbar-toggle" aria-label="Toggle navigation">
         <span></span>
         <span></span>
         <span></span>
       </button>
-      
+
       <ul class="navbar-menu">
         <li><a href="index.html">Home</a></li>
         <li><a href="home-2.html" class="active">Home 2</a></li>
@@ -85,18 +90,22 @@
   <section class="section" style="background-color: var(--bg-primary); padding-top: 5rem;">
     <div class="container">
       <div class="grid grid-2" style="align-items: center; gap: 4rem;">
-         <div>
-           <h2 class="section-title" style="text-align: left;">Who We Are</h2>
-           <p class="section-subtitle" style="text-align: left; margin: 0;">Your Trusted Partner in High Altitude Adventures</p>
-           <div class="mt-4">
-             <p>Founded in 2005, Mountain Expedition began with a simple mission: to share our passion for mountains with adventurers worldwide while maintaining the highest standards of safety and professionalism.</p>
-             <p class="mt-2">We provide expert-led climbing expeditions, comprehensive training programs, and custom adventures tailored to your goals.</p>
-             <a href="about.html" class="btn btn-outline mt-4">Read Our Story</a>
-           </div>
-         </div>
-         <div>
-           <img src="https://images.unsplash.com/photo-1522163182402-834f871fd851?w=800" alt="Mountain guide team" style="border-radius: var(--border-radius); box-shadow: var(--shadow-lg);">
-         </div>
+        <div>
+          <h2 class="section-title" style="text-align: left;">Who We Are</h2>
+          <p class="section-subtitle" style="text-align: left; margin: 0;">Your Trusted Partner in High Altitude
+            Adventures</p>
+          <div class="mt-4">
+            <p>Founded in 2005, Mountain Expedition began with a simple mission: to share our passion for mountains with
+              adventurers worldwide while maintaining the highest standards of safety and professionalism.</p>
+            <p class="mt-2">We provide expert-led climbing expeditions, comprehensive training programs, and custom
+              adventures tailored to your goals.</p>
+            <a href="about.html" class="btn btn-outline mt-4">Read Our Story</a>
+          </div>
+        </div>
+        <div>
+          <img src="https://images.unsplash.com/photo-1522163182402-834f871fd851?w=800" alt="Mountain guide team"
+            style="border-radius: var(--border-radius); box-shadow: var(--shadow-lg);">
+        </div>
       </div>
     </div>
   </section>
@@ -108,10 +117,11 @@
         <h2 class="section-title">Popular Expeditions</h2>
         <p class="section-subtitle">Choose from our most sought-after climbing destinations around the globe.</p>
       </div>
-      
+
       <div class="grid grid-3">
         <div class="expedition-card">
-          <img src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=800" alt="Everest" class="expedition-img">
+          <img src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=800" alt="Everest"
+            class="expedition-img">
           <div class="expedition-body">
             <div class="expedition-meta">
               <span class="badge badge-difficulty">Extreme</span>
@@ -122,7 +132,7 @@
             <a href="expeditions.html" class="btn btn-outline w-100">View Details</a>
           </div>
         </div>
-        
+
         <div class="expedition-card">
           <img src="assets/images/spur.png" alt="K2" class="expedition-img">
           <div class="expedition-body">
@@ -135,7 +145,7 @@
             <a href="expeditions.html" class="btn btn-outline w-100">View Details</a>
           </div>
         </div>
-        
+
         <div class="expedition-card">
           <img src="assets/images/kili.png" alt="Kilimanjaro" class="expedition-img">
           <div class="expedition-body">
@@ -159,27 +169,28 @@
         <h2 class="section-title">Our Services</h2>
         <p class="section-subtitle">Comprehensive mountain expedition services for all skill levels</p>
       </div>
-      
+
       <div class="grid grid-3">
         <div class="card" data-testid="service-card-guided">
           <div style="font-size: 3rem; margin-bottom: 1rem;">🧗</div>
           <h3 class="card-title">Guided Climbs</h3>
-          <p class="card-text">Expert-led climbing expeditions with certified mountain guides ensuring safety and success.</p>
+          <p class="card-text">Expert-led climbing expeditions with certified mountain guides ensuring safety and
+            success.</p>
         </div>
-        
+
         <div class="card" data-testid="service-card-training">
           <div style="font-size: 3rem; margin-bottom: 1rem;">🎓</div>
           <h3 class="card-title">Training Programs</h3>
           <p class="card-text">Comprehensive training courses from beginner to advanced mountaineering skills.</p>
         </div>
-        
+
         <div class="card" data-testid="service-card-custom">
           <div style="font-size: 3rem; margin-bottom: 1rem;">🗺️</div>
           <h3 class="card-title">Custom Expeditions</h3>
           <p class="card-text">Tailored expeditions designed to match your goals, timeline, and experience level.</p>
         </div>
       </div>
-      
+
       <div class="text-center mt-4">
         <a href="services.html" class="btn btn-primary">View All Services</a>
       </div>
@@ -193,26 +204,26 @@
         <h2 class="section-title">Why Choose Us</h2>
         <p class="section-subtitle">Experience, safety, and professionalism in every expedition</p>
       </div>
-      
+
       <div class="grid grid-4">
         <div class="text-center">
           <div style="font-size: 3rem; margin-bottom: 1rem; color: var(--primary);">20+</div>
           <h4>Years Experience</h4>
           <p>Expert guides with decades of mountain experience</p>
         </div>
-        
+
         <div class="text-center">
           <div style="font-size: 3rem; margin-bottom: 1rem; color: var(--primary);">500+</div>
           <h4>Successful Expeditions</h4>
           <p>Proven track record of safe summits</p>
         </div>
-        
+
         <div class="text-center">
           <div style="font-size: 3rem; margin-bottom: 1rem; color: var(--primary);">98%</div>
           <h4>Safety Rating</h4>
           <p>Industry-leading safety protocols</p>
         </div>
-        
+
         <div class="text-center">
           <div style="font-size: 3rem; margin-bottom: 1rem; color: var(--primary);">1000+</div>
           <h4>Happy Climbers</h4>
@@ -227,41 +238,51 @@
     <div class="container">
       <div class="section-header">
         <h2 class="section-title">Latest from the Blog</h2>
-        <p class="section-subtitle">Stay updated with the latest stories, climbing tips, and expedition reports from our team.</p>
+        <p class="section-subtitle">Stay updated with the latest stories, climbing tips, and expedition reports from our
+          team.</p>
       </div>
-      
+
       <div class="grid grid-3">
         <article class="card">
-          <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800" alt="Everest summit" class="card-img">
+          <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800" alt="Everest summit"
+            class="card-img">
           <div class="mt-3">
-            <span class="badge" style="background-color: var(--accent); color: white; margin-bottom: 0.5rem;">Expedition</span>
+            <span class="badge"
+              style="background-color: var(--accent); color: white; margin-bottom: 0.5rem;">Expedition</span>
             <h3 class="h5">Summit Success: Everest 2024</h3>
-            <p class="card-text" style="font-size: 0.95rem;">Our team successfully summited Everest with all members reaching the top. Read the full report...</p>
+            <p class="card-text" style="font-size: 0.95rem;">Our team successfully summited Everest with all members
+              reaching the top. Read the full report...</p>
             <a href="blog.html" class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.875rem;">Read More</a>
           </div>
         </article>
 
         <article class="card">
-          <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?w=800" alt="Ice climbing" class="card-img">
+          <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?w=800" alt="Ice climbing"
+            class="card-img">
           <div class="mt-3">
-            <span class="badge" style="background-color: var(--accent); color: white; margin-bottom: 0.5rem;">Training</span>
+            <span class="badge"
+              style="background-color: var(--accent); color: white; margin-bottom: 0.5rem;">Training</span>
             <h3 class="h5">Essential Ice Climbing Tips</h3>
-            <p class="card-text" style="font-size: 0.95rem;">Master the fundamentals of ice climbing with our guide to techniques and safety gear...</p>
+            <p class="card-text" style="font-size: 0.95rem;">Master the fundamentals of ice climbing with our guide to
+              techniques and safety gear...</p>
             <a href="blog.html" class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.875rem;">Read More</a>
           </div>
         </article>
 
         <article class="card">
-          <img src="https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?w=800" alt="Alpine training" class="card-img">
+          <img src="https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?w=800" alt="Alpine training"
+            class="card-img">
           <div class="mt-3">
-            <span class="badge" style="background-color: var(--accent); color: white; margin-bottom: 0.5rem;">Gear</span>
+            <span class="badge"
+              style="background-color: var(--accent); color: white; margin-bottom: 0.5rem;">Gear</span>
             <h3 class="h5">Preparing for High Altitude</h3>
-            <p class="card-text" style="font-size: 0.95rem;">Learn how to properly acclimatize and prepare your body for your first 6000m peak...</p>
+            <p class="card-text" style="font-size: 0.95rem;">Learn how to properly acclimatize and prepare your body for
+              your first 6000m peak...</p>
             <a href="blog.html" class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.875rem;">Read More</a>
           </div>
         </article>
       </div>
-      
+
       <div class="text-center mt-5">
         <a href="blog.html" class="btn btn-primary">View All Blog Posts</a>
       </div>
@@ -313,9 +334,9 @@
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  
+
   <!-- Custom JS -->
   <script src="assets/js/main.js"></script>
 </body>
-</html>
 
+</html>

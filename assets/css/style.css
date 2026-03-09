@@ -176,6 +176,19 @@
     flex: 0 0 auto;
   }
 
+  .navbar-brand-text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.15rem;
+    color: var(--primary);
+  }
+
+  @media (max-width: 768px) {
+    .navbar-brand-text {
+      display: none; /* Hide text on small screens if it's too cramped */
+    }
+  }
+
   .navbar-logo {
     height: auto;
     width: auto;

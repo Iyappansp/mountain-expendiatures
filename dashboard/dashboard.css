@@ -20,11 +20,22 @@
   top: 0;
 }
 
+.dashboard-sidebar .sidebar-logo {
+  height: 65px; /* Even larger specifically for dashboard */
+  width: 65px;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+  transition: transform 0.3s ease;
+}
+
+.dashboard-sidebar .sidebar-logo:hover {
+  transform: scale(1.1);
+}
+
 .dashboard-main {
   flex: 1;
   margin-left: 250px;
   padding: 2rem;
-  width: calc(100% - 250px); /* Ensure explicit width calculation */
+  width: calc(100% - 250px);
 }
 
 .dashboard-nav {

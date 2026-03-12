@@ -69,6 +69,13 @@
     color: var(--text-primary);
     background-color: var(--bg-primary);
     transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  html {
+    overflow-x: hidden;
+    width: 100%;
   }
 
   h1,
@@ -159,11 +166,10 @@
     justify-content: space-between;
     gap: 1rem;
     flex-wrap: nowrap;
-    padding-left: 0;
-    /* Move logo further left */
-    padding-right: 0;
-    max-width: 98%;
-    /* Allow container to breathe closer to edges */
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 1200px;
+    width: 100%;
   }
 
   .navbar-brand {
@@ -198,7 +204,7 @@
     transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   }
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1200px) {
     .navbar-logo {
       max-height: 50px;
       /* Increased from 40px */
@@ -640,7 +646,7 @@
   }
 
   /* Responsive Design */
-  @media (max-width: 1024px) {
+  @media (max-width: 1200px) {
     h1 {
       font-size: 2.25rem;
     }
@@ -779,14 +785,33 @@
       display: flex;
     }
 
-    .grid-2,
-    .grid-3,
-    .grid-4 {
+    .grid-2 {
       grid-template-columns: 1fr;
+    }
+
+    .grid-3 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid-4 {
+      grid-template-columns: repeat(2, 1fr);
     }
 
     .footer-grid {
       grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .grid-2,
+    .grid-3,
+    .grid-4 {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+
+    .footer-grid {
+      grid-template-columns: 1fr;
     }
   }
 
